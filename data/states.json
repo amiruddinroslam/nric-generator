@@ -1,0 +1,87 @@
+[
+  {
+    "id": 1,
+    "name": "JOHOR",
+    "code": ["01", "21", "22", "23", "24"]
+  },
+  {
+    "id": 2,
+    "name": "KEDAH",
+    "code": ["02", "25", "26", "27"]
+  },
+  {
+    "id": 3,
+    "name": "KELANTAN",
+    "code": ["03", "28", "29"]
+  },
+  {
+    "id": 4,
+    "name": "MELAKA",
+    "code": ["04", "30"]
+  },
+  {
+    "id": 5,
+    "name": "NEGERI SEMBILAN",
+    "code": ["05", "31", "59"]
+  },
+  {
+    "id": 6,
+    "name": "PAHANG",
+    "code": ["06", "32", "33"]
+  },
+  {
+    "id": 7,
+    "name": "PULAU PINANG",
+    "code": ["07", "34", "35"]
+  },
+  {
+    "id": 8,
+    "name": "PERAK",
+    "code": ["08", "36", "37", "38", "39"]
+  },
+  {
+    "id": 9,
+    "name": "PERLIS",
+    "code": ["09", "40"]
+  },
+  {
+    "id": 10,
+    "name": "SELANGOR",
+    "code": ["10", "41", "42", "43", "44"]
+  },
+  {
+    "id": 11,
+    "name": "TERENGGANU",
+    "code": ["11", "45", "46"]
+  },
+  {
+    "id": 12,
+    "name": "SABAH",
+    "code": ["12", "47", "48", "49"]
+  },
+  {
+    "id": 13,
+    "name": "SABAH",
+    "code": ["13", "50", "51", "52", "53"]
+  },
+  {
+    "id": 14,
+    "name": "WILAYAH PERSEKUTUAN (KUALA LUMPUR)",
+    "code": ["14", "54", "55", "56", "57"]
+  },
+  {
+    "id": 15,
+    "name": "WILAYAH PERSEKUTUAN (LABUAN)",
+    "code": ["15", "58"]
+  },
+  {
+    "id": 16,
+    "name": "WILAYAH PERSEKUTUAN (PUTRAJAYA)",
+    "code": ["16"]
+  },
+  {
+    "id": 17,
+    "name": "UNKNOWN STATE",
+    "code": ["82"]
+  }
+]
