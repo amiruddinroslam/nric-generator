@@ -20,6 +20,10 @@ class App extends Component {
   }
 
   handleClick = () => {
+    this.setState({
+      copyText: 'Copy!'
+    });
+
     let yearOnIC = this.state.selectedYear.slice(2);
     let monthOnIC = Math.floor(Math.random() * Math.floor(12) + 1)
       .toString()
