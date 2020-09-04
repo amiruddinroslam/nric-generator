@@ -15,13 +15,15 @@ class App extends Component {
       selectedGender: null,
       icNumber: null,
       isLoaded: false,
-      copyText: 'Copy!'
+      copyText: 'Copy!',
+      removeDash: false
     };
   }
 
   handleClick = () => {
     this.setState({
-      copyText: 'Copy!'
+      copyText: 'Copy!',
+      // removeDash: false
     });
 
     let yearOnIC = this.state.selectedYear.slice(2);
@@ -48,7 +50,7 @@ class App extends Component {
         .toString()
         .padStart(3, "0") + fourLastNumberGenderBased.toString();
 
-    const icNumber = [birthday, regionCode, fourLastNumber].join("-");
+    const icNumber = this.state.removeDash ? [birthday, regionCode, fourLastNumber].join("") : [birthday, regionCode, fourLastNumber].join("-");
 
     this.setState({
       icNumber
@@ -60,6 +62,12 @@ class App extends Component {
       [e.target.name]: e.target.value
     });
   };
+
+  handleCheckbox = e => {
+    this.setState({
+      removeDash: !this.state.removeDash,
+    });
+  }
 
   componentDidMount = () => {
     let url = "data/states.json";
@@ -172,6 +180,13 @@ class App extends Component {
                       </div>
                     </div>
                   </div>
+                  <label className="checkbox">
+                    <input type="checkbox" 
+                      name="removeDash"
+                      onChange={this.handleCheckbox}
+                      checked={this.state.removeDash} />
+                      &nbsp;Remove dash?
+                  </label>
                   <div className="control has-text-centered">
                     <button className="button is-primary" onClick={this.handleClick} disabled={!this.disabledButton()}>Generate!</button>
                   </div>
